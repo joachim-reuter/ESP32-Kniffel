@@ -1,5 +1,7 @@
 # ESP32 Kniffel
 
+![ESP32 Kniffel](images/kniffel.jpg)
+
 Ein digitaler Kniffel-Würfel auf Basis eines ESP32 mit 480 × 320 TFT-Touchdisplay.
 
 Das Projekt simuliert fünf Würfel und ermöglicht das Spielen nach den bekannten Kniffel-Regeln.
