@@ -54,6 +54,11 @@ Das Programm erkennt:
 
 Das Projekt wurde mit der Arduino IDE entwickelt.
 
+Verwendet wurde:
+
+- ESP32 Board Package: Espressif ESP32 2.10.14
+- Bibliothek: TFT_eSPI
+
 Benötigt wird:
 
 - ESP32 Board-Unterstützung
@@ -69,9 +74,33 @@ entwickelt.
 
 ## TFT_eSPI
 
-Für das Display wird ein ILI9488 verwendet.
+Für das Display wird die Bibliothek **TFT_eSPI** verwendet.
 
-Die erforderliche TFT_eSPI-Konfiguration ist im Projekt dokumentiert.
+Display:
+
+- ILI9488
+- 480 × 320 Pixel
+- SPI
+- resistiver Touch
+
+Die für dieses Projekt benötigte Konfiguration befindet sich in:
+
+`User_Setup.h`
+
+### Einrichtung von TFT_eSPI
+
+1. TFT_eSPI über den Arduino Library Manager installieren.
+2. Die Datei `User_Setup.h` aus diesem Repository öffnen.
+3. Die darin enthaltene Konfiguration in die TFT_eSPI-Konfiguration übernehmen.
+4. Die Arduino IDE neu starten.
+5. Den Sketch `ESP32-Kniffel.ino` öffnen und auf den ESP32 übertragen.
+
+### Touch-Kalibrierung
+
+Die aktuelle Touch-Kalibrierung ist im Sketch hinterlegt:
+
+```cpp
+uint16_t calData[5] = { 375, 3394, 487, 3192, 1 };
 
 ## Bedienung
 
