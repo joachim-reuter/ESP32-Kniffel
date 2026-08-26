@@ -1,5 +1,5 @@
 # ESP32 Kniffel
-![ESP32 Kniffel](images/kniffel.jpg)
+![ESP32 Kniffel](./images/kniffel.jpg)
 
 Ein digitaler Kniffel-Würfel auf Basis eines ESP32 mit 480 × 320 TFT-Touchdisplay.
 
